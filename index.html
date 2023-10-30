@@ -30,6 +30,9 @@
             max-width: 100%;
             height: auto;
         }
+        .highlighted {
+            background-color: #f7f79a; /* Change the background color to your preference */
+        }
     </style>
 </head>
 <body>
@@ -39,37 +42,37 @@
             <h1>Workflow</h1>
             <p>Immediately after a story is approved by the desk:</p>
             <ol id="workflow">
-                <li class="instruction" onclick="showImage('1.JPG')">Set the <span class="blue-underlined">Slug</span> in a new article asset and send it in your Slack channel for sked.</li>
+                <li class="instruction" onclick="showImage('1.JPG', this)">Set the <span class="blue-underlined">Slug</span> in a new article asset and send it in your Slack channel for sked.</li>
                     <ul id="workflow">
-                        <li class="instruction" onclick="showImage('2.jpg')"><span class="blue-underlined">SPC-HCN-1101-StoryTitle</span></li>
+                        <li class="instruction" onclick="showImage('2.jpg', this)"><span class="blue-underlined">SPC-HCN-1101-StoryTitle</span></li>
                     </ul>
                 </li>
-            <li class="instruction" onclick="showImage('3.JPG')">Set the <span class="blue-underlined">Workflow</span> as digital_and_print and the process as draft.</li>
-            <li class="instruction" ><span class="blue-underlined" onclick="showImage('4.JPG')">Add a Section</span> tag for the story category. <span class="red-warning-link" onclick="showImage('20.jpg')">(These are your ONLY choices!)</span></li>
-            <li class="instruction" ><span class="blue-underlined" onclick="showImage('5.JPG')">Add a Publication </span> tag in the same spot. <span class="red-warning">(Category tag from Step 3 MUST be </span><span class="red-warning-link" onclick="showImage('22.JPG')">top of list!)</span></li>
-            <li class="instruction" onclick="showImage('6.JPG')">Set the <span class="blue-underlined">Date</span> for at least two days in future.</li>
+            <li class="instruction" onclick="showImage('3.JPG', this)">Set the <span class="blue-underlined">Workflow</span> as digital_and_print and the process as draft.</li>
+            <li class="instruction" ><span class="blue-underlined instruction" onclick="showImage('4.JPG', this)">Add a Section</span> tag for the story category. <span class="red-warning-link instruction" onclick="showImage('20.jpg', this)">(These are your ONLY choices!)</span></li>
+            <li class="instruction" ><span class="blue-underlined instruction" onclick="showImage('5.JPG', this)">Add a Publication </span> tag in the same spot. <span class="red-warning">(Category tag from Step 3 MUST be </span><span class="red-warning-link instruction" onclick="showImage('22.JPG', this)">top of list!)</span></li>
+            <li class="instruction" onclick="showImage('6.JPG', this)">Set the <span class="blue-underlined">Date</span> for at least two days in future.</li>
             <li>Populate body, headline, and summary 
             <ul>
-                <li class="instruction" onclick="showImage('7.JPG')"><span class="blue-underlined">Web headline</span></li>
-                <li class="instruction" ><span class="blue-underlined" onclick="showImage('8.JPG')">Body copy</span> (You can see inch count <span class="blue-underlined" onclick="showImage('19.JPG')">like this.</span>)</li>
-                <li class="instruction" onclick="showImage('9.JPG')"><span class="blue-underlined">Author</span></li>
-                <li class="instruction" onclick="showImage('10.JPG')"><span class="blue-underlined">Summary</span></li>
-                <li class="instruction"><span class="blue-underlined" onclick="showImage('11.JPG')">SEO headline and description</span> <span class="red-warning-link" onclick="showImage('21.JPG')">(Extra step here for COLUMNISTS)</span></li>
-                <li class="instruction" onclick="showImage('12.JPG')"><span class="blue-underlined">Print headline and deck</span></li>
+                <li class="instruction" onclick="showImage('7.JPG', this)"><span class="blue-underlined">Web headline</span></li>
+                <li class="instruction" ><span class="blue-underlined instruction" onclick="showImage('8.JPG', this)">Body copy</span> (You can see inch count <span class="blue-underlined instruction" onclick="showImage('19.JPG', this)">like this.</span>)</li>
+                <li class="instruction" onclick="showImage('9.JPG', this)"><span class="blue-underlined">Author</span></li>
+                <li class="instruction" onclick="showImage('10.JPG', this)"><span class="blue-underlined">Summary</span></li>
+                <li class="instruction"><span class="blue-underlined instruction" onclick="showImage('11.JPG', this)">SEO headline and description</span> <span class="red-warning-link instruction" onclick="showImage('21.JPG', this)">(Extra step here for COLUMNISTS)</span></li>
+                <li class="instruction" onclick="showImage('12.JPG', this)"><span class="blue-underlined">Print headline and deck</span></li>
                 <li>*Keywords may come later</li>
             </ul>
             </li>
             <li>Add photo
                 <ul>
-                    <li class="instruction" onclick="showImage('13.JPG')"><span class="blue-underlined">Publish</span> to BLOX from EMMA <span class="red-warning">(*Filename is PUBLIC*)</span> </li>
-                    <li class="instruction" onclick="showImage('14.JPG')"><span class="blue-underlined">Find</span> as a Child Asset</li>
-                    <li class="instruction" onclick="showImage('15.JPG')"><span class="blue-underlined">Search</span> for image</li>
-                    <li class="instruction" onclick="showImage('16.JPG')"><span class="blue-underlined">Add</span> to selections</li>
-                    <li class="instruction" onclick="showImage('17.JPG')"><span class="blue-underlined">Add</span> selected assets</li>
+                    <li class="instruction" onclick="showImage('13.JPG', this)"><span class="blue-underlined">Publish</span> to BLOX from EMMA <span class="red-warning">(*Filename is PUBLIC*)</span> </li>
+                    <li class="instruction" onclick="showImage('14.JPG', this)"><span class="blue-underlined">Find</span> as a Child Asset</li>
+                    <li class="instruction" onclick="showImage('15.JPG', this)"><span class="blue-underlined">Search</span> for image</li>
+                    <li class="instruction" onclick="showImage('16.JPG', this)"><span class="blue-underlined">Add</span> to selections</li>
+                    <li class="instruction" onclick="showImage('17.JPG', this)"><span class="blue-underlined">Add</span> selected assets</li>
                     <li>*Keywords may come later</li>
                 </ul>
             </li>
-            <li><span class="blue-underlined instruction" onclick="showImage('18.JPG')">File</span> slug to <a href="https://metroland-editorial.slack.com/messages/reporter-editor/">#reporter-editor</a> in Slack when story is ready for desk.</li>
+            <li><span class="blue-underlined instruction" onclick="showImage('18.JPG', this)">File</span> slug to <a href="https://metroland-editorial.slack.com/messages/reporter-editor/">#reporter-editor</a> in Slack when story is ready for desk.</li>
         </div>
         <div class="col-md-6 container">
             <div class="image-container">
@@ -80,11 +83,25 @@
 
 
     <script>
-        function showImage(imagePath) {
+        // function showImage(imagePath) {
+        //     var displayedImage = document.getElementById('displayed-image');
+        //     displayedImage.src = imagePath;
+        // }
+        function showImage(imagePath, listItem) {
             var displayedImage = document.getElementById('displayed-image');
             displayedImage.src = imagePath;
+
+            // Remove 'highlighted' class from all list items
+            var instructions = document.querySelectorAll('.instruction');
+            instructions.forEach(function(item) {
+                item.classList.remove('highlighted');
+            });
+
+            // Add 'highlighted' class to clicked list item
+            listItem.classList.add('highlighted');
         }
     </script>
+    
 
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script> 
 </body>
