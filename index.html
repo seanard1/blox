@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Workflow</title>
+    <title>Content Creation Workflow</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <style>
         body {
@@ -33,13 +33,29 @@
         .highlighted {
             background-color: #f7f79a; /* Change the background color to your preference */
         }
+        .fixed-container {
+            position: fixed;
+            /* top: 250px; */
+            right: 1px;
+            /* transform: translate(-50%, -50%); */
+            background-color: #fff;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            /* max-height: 10vh; */
+        }
+        .fixed-container img {
+            max-width: 45vw; /* 50% of the viewport width */
+            height: auto;
+        }
     </style>
 </head>
 <body>
 
     <div class="row">
-        <div class="col-md-6 container">
-            <h1>Workflow</h1>
+        <div class="col-md-6">
+            <h1>Content Creation <small>(<a href="https://seanard1.github.io/blox-edit/">Editing</a> || <a href="https://seanard1.github.io/blox-slot/">Slotting</a>)</small></h1>
             <p>Immediately after a story is approved by the desk:</p>
             <ol id="workflow">
                 <li class="instruction" onclick="showImage('1.JPG', this)">Set the <span class="blue-underlined">Slug</span> in a new article asset and send it in your Slack channel for sked.</li>
@@ -75,8 +91,8 @@
             </li>
             <li><span class="blue-underlined instruction" onclick="showImage('18.JPG', this)">File</span> slug to <a href="https://metroland-editorial.slack.com/messages/reporter-editor/">#reporter-editor</a> in Slack when story is ready for desk.</li>
         </div>
-        <div class="col-md-6 container">
-            <div class="image-container">
+        <div class="col-md-6">
+            <div class="image-container fixed-container">
                 <img id="displayed-image" src="" alt="Displayed Image" class="img-fluid">
             </div>
         </div>
@@ -104,6 +120,6 @@
     </script>
     
 
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script> 
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 </body>
 </html>
